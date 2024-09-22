@@ -147,10 +147,20 @@ body {
 
 /* ======= HERO STYLES =======*/
 .page-hero {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hw4/people-office.jpg);
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
   background-color: #2e2f42;
   padding-top: 188px;
   padding-bottom: 188px;
 }
+
 .button-hero:hover,
 .button-hero:focus {
   background-color: #404bbf;
