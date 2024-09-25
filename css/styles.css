@@ -224,6 +224,17 @@ body {
   letter-spacing: 0.02em;
   color: #434455;
 }
+.icon-benefits {
+  width: 264px;
+  height: 112px;
+  background-color: #f4f4fd;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* ======= /OUR BENEFITS STYLES =======*/
 
 /* ======= OUR TEAM STYLES =======*/
@@ -313,7 +324,7 @@ body {
   background-color: #4d5ae5;
   color: #f4f4fd;
   overflow: auto;
-  padding: 40px 32px
+  padding: 40px 32px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -378,17 +389,21 @@ body {
   color: #f4f4fd;
   max-width: 264px;
 }
-.text-icon-footer{
+.icon-footer {
+  display: flex;
+  align-items: baseline;
+  margin-right: 120px;
+}
+.text-icon-footer {
   font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
 }
 .icon-list-footer {
   display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 16px;
 }
 .icon-list-item-footer {
@@ -397,18 +412,22 @@ color: #fff;
 }
 .icon-link-footer {
   display: flex;
-  justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
   border-radius: 50%;
   background-color: #4d5ae5;
-  line-height: 0;
-  margin-bottom: 32px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-link-footer:hover,
 .icon-link-footer:focus {
   background-color: #31d0aa;
+}
+.icon-item {
+  fill: #f4f4fd;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-link-footer:hover,
+.icon-link-footer:focus {
+  fill: #f4f4fd;
 }
 /* ======= /FOOTER STYLES =======*/
