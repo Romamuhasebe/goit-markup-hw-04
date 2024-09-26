@@ -261,6 +261,8 @@ body {
   width: calc((100% - 72px) / 4);
   background-color: #ffffff;
   border-radius: 0 0 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .menu-team {
   display: flex;
@@ -286,6 +288,27 @@ body {
   text-align: center;
   color: #434455;
   margin-bottom: 32px;
+}
+.links-team {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.links-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.links-main:hover,
+.links-main:focus {
+  background-color: #404bbf;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* ======= /OUR TEAM STYLES =======*/
 
@@ -313,9 +336,9 @@ body {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-portfolio-item:hover {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-        0px 1px 1px rgba(46, 47, 66, 0.16),
-        0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .images-wrapper {
   position: relative;
   overflow: hidden;
@@ -369,7 +392,13 @@ body {
   padding-top: 100px;
   padding-bottom: 100px;
 }
-
+.container-flex {
+  display: flex;
+  align-items: baseline;
+}
+.container-second {
+  margin-right: 120px;
+}
 .page-logo-second {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -393,11 +422,6 @@ body {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
-}
-.icon-footer {
-  display: flex;
-  align-items: baseline;
-  margin-right: 120px;
 }
 .text-icon-footer {
   font-weight: 500;
